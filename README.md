@@ -1,102 +1,150 @@
-# Retail Sales & Performance Analytics | Power BI
+# Global Superstore Sales & Profit Dashboard
 
-An interactive Power BI project analyzing retail sales, profitability, product performance, and shipping operations using historical Superstore data from 2011–2014.
+### Power BI | DAX | Data Analytics | Business Intelligence
 
-The dashboard transforms transactional data into visual reports that help explore revenue trends, identify product performance patterns, and evaluate shipping behavior across markets.
+An interactive three-page Power BI dashboard analyzing global retail sales, profitability, product performance, and customer behavior from 2011 to 2014.
+
+The project demonstrates how raw retail transactions can be transformed into meaningful KPIs and interactive reports to support business performance analysis.
 
 ## Project Overview
 
-**Tool:** Microsoft Power BI  
-**Data Source:** [Superstore Sales Dataset — Kaggle](https://www.kaggle.com/datasets/laibaanwer/superstore-sales-dataset)  
+**Dataset:** Global Superstore  
+**Tool:** Microsoft Power BI Desktop  
 **Analysis Period:** 2011–2014  
-**Project Type:** Business Intelligence & Data Visualization
+**Focus:** Sales Performance, Product Profitability, Geographic Trends, Customer Analysis
 
 ## Business Objectives
 
-The project explores the following questions:
+- Evaluate overall sales growth and profitability across markets and years.
+- Identify top-performing markets, product categories, and subcategories.
+- Examine the relationship between product sales and profit.
+- Analyze revenue contribution across countries and customer segments.
+- Create interactive reports that allow users to explore retail performance.
 
-1. How do sales and profit change across years, quarters, and product categories?
-2. Which product categories and subcategories contribute to sales and profitability?
-3. How do shipping modes and order priorities vary across markets?
+## Dashboard Overview
 
-## Dashboard Pages
+### 1. Executive Sales Overview
 
-### 1. Sales Analysis
+![Executive Overview](screenshots/01-Overview.png)
 
-![Sales Analysis Dashboard](screenshots/sales-analysis.png)
+The executive dashboard provides a high-level view of sales, profitability, and business performance.
 
-Provides an overview of retail sales performance, including revenue, profit, historical trends, and category comparisons.
+**Key Performance Indicators**
 
-**Key findings documented in the original analysis:**
+| Metric | Value |
+|---|---:|
+| Total Sales | $12.64M |
+| Total Profit | $1.47M |
+| Total Orders | 25K |
+| Total Quantity | 178K |
 
-- Total sales reached approximately **$3 million**, generating **$400.9K in profit** over 2011–2014.
-- In 2014, sales reached approximately **$1 million**, with **$119.11K in profit**.
-- The Technology category contributed **46% of profit** in the documented analysis.
+**Key Insights**
 
-**Features:** KPI reporting, year and quarter filtering, category comparisons, and interactive visuals.
+- APAC leads market-level sales with approximately **$3.59M**, followed by EU at **$2.94M**.
+- Technology is the highest-selling category, contributing approximately **$4.74M (37.53%)** of total sales.
+- Annual sales increased from **$2.26M in 2011** to **$4.30M in 2014**.
+- Copiers generated approximately **$259K in profit**, ranking first among the displayed subcategories.
 
-### 2. Product Analysis
+**Visualizations:** KPI cards, market comparison bar chart, category donut chart, annual sales/profit combination chart, and subcategory profit ranking.
 
-![Product Analysis Dashboard](screenshots/product-analysis.png)
+### 2. Product Performance Analysis
 
-Explores product-level performance through sales, quantities, product categories, subcategories, and discounts.
+![Product Performance](screenshots/02-Product.png)
 
-**Key findings:**
+The product dashboard explores sales distribution, profitability, and discounts across retail products.
 
-- Office Supplies recorded the highest quantity ordered among product categories.
-- Tables had an average discount of **28% in 2014** under the documented analysis filters.
-- Product performance can be explored across years and markets.
+**Key Performance Indicators**
 
-**Features:** Category breakdowns, product comparisons, quantity analysis, and interactive filtering.
+| Metric | Value |
+|---|---:|
+| Average Order Value | $505.01 |
+| Average Discount | 8.13% |
+| Profit Margin | 11.61% |
 
-### 3. Shipping Analysis
+**Key Insights**
 
-![Shipping Analysis Dashboard](screenshots/shipping-analysis.png)
+- Phones generated approximately **$1.71M in sales**, making them one of the leading subcategories.
+- The product-level sales-versus-profit scatter chart reveals considerable variation in profitability.
+- Some products exhibit negative profit despite generating sales, highlighting potential areas for further discount and cost analysis.
 
-Examines shipping-mode preferences, order priorities, and shipping costs across geographical markets.
+**Visualizations:** Category/subcategory treemap, sales-versus-profit scatter chart, detailed product table, conditional formatting, and category slicer.
 
-**Key findings:**
+### 3. Geographic & Customer Analysis
 
-- Standard shipping accounted for **53% of orders**.
-- First Class was used for **41% of Critical-priority orders** in the documented analysis.
-- APAC recorded the highest shipping costs among the markets highlighted, followed by EU and US.
+![Geographic and Customer Analysis](screenshots/03-Customers.png)
 
-**Features:** Shipping-mode distribution, order-priority comparisons, and market-level shipping analysis.
+This dashboard examines geographic revenue distribution and customer performance.
 
-## Tools & Skills Demonstrated
+**Key Performance Indicators**
 
-| Area | Skills |
+| Metric | Value |
+|---|---:|
+| Total Customers | Approximately 5K |
+| Sales per Customer | $2.59K |
+| Profit per Customer | $301.14 |
+
+**Key Insights**
+
+- The United States leads the displayed country rankings with approximately **$2.30M in sales**.
+- Australia and France follow with approximately **$0.93M** and **$0.86M** respectively.
+- The Consumer segment contributes the largest share of sales, followed by Corporate and Home Office.
+- The customer-level table helps identify highly profitable customers as well as customers associated with losses.
+
+**Visualizations:** Top 10 countries bar chart, customer segment sales chart, detailed customer performance table, and year/region slicers.
+
+## Dashboard Features
+
+- Three interconnected analytical report pages
+- KPI reporting using DAX measures
+- Interactive slicers for year, market, region, and category
+- Page navigation buttons
+- Sales and profit comparisons
+- Product and customer-level performance tables
+- Conditional formatting to distinguish positive and negative profitability
+- Interactive chart filtering and contextual analysis
+
+## Skills Demonstrated
+
+| Category | Technologies & Techniques |
 |---|---|
 | Business Intelligence | Microsoft Power BI |
-| Reporting | Interactive dashboards and KPI reporting |
-| Analytics | Sales analysis, profitability, product analysis |
-| Visualization | Trend analysis and comparative charts |
-| Business Operations | Shipping cost and order-priority analysis |
+| Calculations | DAX, KPI Measures |
+| Analytics | Sales Analysis, Profitability Analysis, Customer Segmentation |
+| Visualization | KPI Cards, Bar Charts, Treemaps, Scatter Charts, Donut Charts |
+| Reporting | Interactive Filters, Drill-down, Conditional Formatting |
+| Decision Support | Performance Monitoring, Product and Market Comparisons |
 
-## Business Insights
+## Key Business Takeaways
 
-The analysis highlights differences in sales performance, profitability, product demand, and shipping preferences.
+The analysis indicates that sales and profitability vary considerably by market, product category, and customer segment.
 
-These findings can help frame further questions about product profitability, discount strategies, seasonal sales patterns, and operational costs.
+Technology contributes the largest share of sales, while individual product profitability varies even among high-selling products.
 
-The project is a portfolio analysis of historical retail data, not a report of implemented business improvements.
+The dashboard can help analysts investigate revenue concentration, customer profitability, and opportunities for deeper operational analysis. These are analytical findings, not claims of implemented business improvements.
 
-## How to Explore the Dashboard
+## Repository Structure
 
-1. Download `Superstoredata-dashboard.pbix` from this repository.
-2. Open the file using Microsoft Power BI Desktop.
-3. Navigate between the report pages.
-4. Explore the charts and apply available filters to examine different segments.
+```text
+Global-Superstore-Dashboard/
+├── README.md
+├── Superstoredata-dashboard.pbix
+└── screenshots/
+    ├── 01-Overview.png
+    ├── 02-Product.png
+    └── 03-Customers.png
+```
 
-## Dataset
+## How to Use
 
-The dataset is attributed to the [Superstore Sales Dataset on Kaggle](https://www.kaggle.com/datasets/laibaanwer/superstore-sales-dataset).
-
-Dataset usage is subject to the terms provided by its original publisher.
+1. Clone or download this GitHub repository.
+2. Install Microsoft Power BI Desktop.
+3. Open `Superstoredata-dashboard.pbix`.
+4. Explore the Overview, Product, and Customers report pages.
+5. Apply slicers and interact with visuals to analyze specific segments.
 
 ## Author
 
 **Hrudayesh Gharat**  
-Aspiring Data Analyst | SQL | Python | Power BI | Excel
+Data Analyst | SQL | Python | Power BI | Excel
 
-[LinkedIn](https://www.linkedin.com/in/hrudayeshgharat/) | [GitHub](https://github.com/hrudayeshgharat/) | [Portfolio](https://hrudfolio.vercel.app/)
+[GitHub](https://github.com/hrudayeshgharat/) | [LinkedIn](https://www.linkedin.com/in/hrudayeshgharat/) | [Portfolio](https://hrudfolio.vercel.app/)
